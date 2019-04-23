@@ -1,0 +1,42 @@
+@import "../../assets/constants/fonts.scss";
+$color-SliderColor: rgb(255, 255, 255);
+
+.SliderCustomArrows-ArrowWrapper {
+  position: absolute;
+  display: flex;
+  width: 91%;
+  height: 314px;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-left: -2px;
+
+  @media screen and (min-width: 1450px) {
+    width: 98%;
+    height: 514px;
+  }
+}
+.SliderCustomArrows-Arrow {
+  height: 48px;
+  width: 122px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: $font-size-largest;
+  > span {
+    color: $color-SliderColor;
+    cursor: pointer;
+    z-index: 10;
+  }
+  > div {
+    cursor: pointer;
+  }
+}
+.SliderCustomArrows-SlidesCount {
+  color: $color-SliderColor;
+  font-size: $font-size-small;
+  margin-bottom: 15px;
+  min-width: 50px;
+  > span {
+    opacity: 0.7;
+  }
+}

@@ -1,0 +1,63 @@
+.Citations {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  margin-top: 25px;
+  margin-bottom: -6%;
+  display: flex;
+  @media screen and (min-width: 1500px) {
+    margin-bottom: 0%;
+  }
+  @media screen and (max-width: 700px) {
+    margin-bottom: 0%;
+  }
+}
+.Citations-Slider {
+  width: 91%;
+  height: 314px;
+  @media screen and (min-width: 1450px) {
+    width: 98%;
+    height: 514px;
+  }
+  @media screen and (max-width: 700px) {
+    width: 100%;
+  }
+}
+.Citations-SliderBg {
+  background-image: url("../../assets/images/sliderBg.png");
+  background-position: bottom right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  @media screen and (max-width: 700px) {
+    background-position: top left;
+  }
+}
+.Citations-Parallelogram {
+  position: relative;
+  height: 390px;
+  right: 9.1%;
+  > div {
+    border-left: 45px solid white;
+  }
+  @media screen and (min-width: 1450px) {
+    height: 590px;
+  }
+  @media screen and (max-width: 700px) {
+    display: none;
+  }
+}
+.Citations-Quotes {
+  background-image: url("../../assets/images/quotes.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 20%;
+  width: 10%;
+  position: absolute;
+  bottom: -30%;
+  right: 74%;
+  @media screen and (max-width: 1120px) {
+    display: none;
+  }
+}

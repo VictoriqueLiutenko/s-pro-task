@@ -1,0 +1,9 @@
+@import "../../assets/constants/fonts.scss";
+
+.Title {
+  font-size: $font-size-adaptive-small;
+  font-family: $fontFamily_cabin;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0;
+}

@@ -1,0 +1,44 @@
+@import "../../assets/constants/fonts.scss";
+
+$color-timerDisplay: rgb(255, 255, 255);
+
+.Timer {
+  position: relative;
+  z-index: 5;
+  color: $color-timerDisplay;
+  font-family: $fontFamily_cabin;
+  text-transform: uppercase;
+  padding: 7% 0 0 12%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 61%;
+  width: 335px;
+  @media screen and (min-width: 1500px) {
+    width: 100%;
+    padding: 3% 0 0 12%;
+  }
+  @media screen and (max-width: 1120px) {
+    width: 90%;
+    height: 65%;
+    padding: 5%;
+  }
+}
+.TimerDisplay {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.TimerDisplay-Name {
+  font-size: $font-size-smallest;
+}
+.TimerDisplay-Number {
+  font-size: $font-size-adaptive-large;
+}

@@ -1,0 +1,40 @@
+@import "../../assets/constants/variables.scss";
+
+$color-Roadmap_line: rgb(222, 227, 235);
+
+.Roadmap-TreeWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 72%;
+  margin-left: calc(((100% - 72%) / 2) + (#{$RoadmapCircleOuterSize}) / 2);
+  @media screen and (max-width: 1000px) {
+    width: 95%;
+    margin-left: calc(((100% - 95%) / 2) + (#{$RoadmapCircleOuterSize}) / 2);
+  }
+}
+.Roadmap-ItemWrapper {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  > .Roadmap-ConnectingLine {
+    height: 2px;
+    margin: $RoadmapCircleCenter - 1;
+    background-color: $color-Roadmap_line;
+  }
+}
+.Roadmap-ItemWrapper_even {
+  margin-right: calc(50% - #{$RoadmapCircleOuterSize});
+  > .Roadmap-ConnectingLine {
+    width: 29%;
+    position: absolute;
+    margin-right: auto;
+    margin-left: 77px;
+  }
+}
+.Roadmap-ItemWrapper_odd {
+  margin-left: calc(50% - #{$RoadmapCircleOuterSize});
+  > .Roadmap-ConnectingLine {
+    width: 68px;
+    margin-left: 0;
+  }
+}

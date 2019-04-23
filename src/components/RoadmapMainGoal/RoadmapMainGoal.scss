@@ -1,0 +1,46 @@
+@import "../../assets/constants/fonts.scss";
+
+$color-RoadmapMainGoalListItem: rgb(0, 2, 33);
+$color-RoadmapMainGoalTitle: rgb(0, 2, 33);
+$color-RoadmapMainGoalImageBorder: rgb(54, 158, 207);
+
+.RoadmapMainGoal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+}
+.RoadmapMainGoal-Image {
+  background-image: url("../../assets/images/logoRound.svg");
+  background-position: 66% 75%;
+  background-size: 30px;
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  &:before {
+    content: "";
+    display: block;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border: 2px solid $color-RoadmapMainGoalImageBorder;
+    border-radius: 50%;
+  }
+}
+.RoadmapMainGoal-Year {
+  color: $color-RoadmapMainGoalTitle;
+  font-family: $fontFamily_cabin;
+  font-size: $font-size-largest;
+  margin-bottom: 9px;
+}
+.RoadmapMainGoal-List {
+  margin: 0;
+  padding-left: 22px;
+  color: $color-RoadmapMainGoalListItem;
+  font-family: $fontFamily_montserrat;
+  font-size: $font-size-small;
+  letter-spacing: -0.5px;
+  > li {
+    padding: 2px 0;
+  }
+}

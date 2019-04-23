@@ -1,0 +1,45 @@
+@import "../../assets/constants/fonts.scss";
+@import "../../assets/constants/variables.scss";
+
+$color-GoalListItem: rgb(0, 2, 33);
+$color-GoalListItem_finished: rgba(0, 2, 33, 0.4);
+$color-GoalTitle: rgb(0, 2, 33);
+$color-GoalTitle_current: rgb(54, 158, 207);
+$color-GoalTitle_finished: rgba(0, 2, 33, 0.4);
+
+.Goal {
+  width: 90%;
+}
+.Goal-Title {
+  color: $color-GoalTitle;
+  font-family: $fontFamily_cabin;
+  font-size: $font-size-larger;
+  margin-top: ($RoadmapCircleOuterSize - $RoadmapCircleDiameter) / 2 - 2;
+  margin-bottom: 5px;
+}
+.Goal-List {
+  margin: 0;
+  padding-left: 22px;
+}
+.Goal-ListItem {
+  color: $color-GoalListItem;
+  font-family: $fontFamily_montserrat;
+  font-size: $font-size-small;
+  padding: 2px 0;
+  letter-spacing: -0.5px;
+}
+.Goal_current {
+  @extend .Goal;
+  .Goal-Title {
+    color: $color-GoalTitle_current;
+  }
+}
+.Goal_finished {
+  @extend .Goal;
+  .Goal-Title {
+    color: $color-GoalTitle_finished;
+  }
+  .Goal-ListItem {
+    color: $color-GoalListItem_finished;
+  }
+}

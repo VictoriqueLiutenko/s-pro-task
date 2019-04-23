@@ -1,0 +1,49 @@
+@import "../../assets/constants/fonts.scss";
+
+$color-FooterBackground: rgb(247, 248, 250);
+$color-FooterText: rgb(0, 2, 33);
+$color-FooterLine: rgb(221, 227, 235);
+
+.Footer {
+  margin-top: 66px;
+  border-top: 1px solid $color-FooterLine;
+}
+.Footer-Social {
+  width: calc(91% - 100px); //100px - Logo widht
+  display: flex;
+  justify-content: center;
+}
+.Footer-WhiteBg {
+  display: flex;
+  align-items: center;
+  padding: 2% 9%;
+  @media screen and (max-width: 700px) {
+    padding: 2% 1%;
+  }
+}
+.Footer-GrayBg {
+  background-color: $color-FooterBackground;
+  padding: 3% 9%;
+  display: flex;
+  justify-content: space-between;
+  color: $color-FooterText;
+  font-family: $fontFamily_montserrat;
+  font-size: $font-size-smallest;
+  letter-spacing: -0.5px;
+  @media screen and (max-width: 700px) {
+    padding: 2% 1%;
+  }
+}
+.Footer-ConditionsLinks {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  > li {
+    list-style: none;
+    padding-right: 20px;
+    > a {
+      text-decoration: none;
+      color: $color-FooterText;
+    }
+  }
+}

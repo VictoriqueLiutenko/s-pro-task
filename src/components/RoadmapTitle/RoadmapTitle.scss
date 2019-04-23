@@ -1,0 +1,30 @@
+@import "../../assets/constants/fonts.scss";
+
+$color-RoadmapTitleBackgroundText: rgb(242, 243, 245);
+$color-RoadmapTitleHeaderText: rgb(0, 2, 33);
+
+.RoadmapTitle {
+  font-family: $fontFamily_cabin;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+}
+.RoadmapTitle-BackgroundText {
+  color: $color-RoadmapTitleBackgroundText;
+  font-size: $font-size-adaptive-jumbo;
+  margin: 0;
+  letter-spacing: 15px;
+}
+.RoadmapTitle-Parallelogram {
+  margin: 0 auto 0 30%;
+  position: absolute;
+  top: 35%;
+}
+.RoadmapTitle-HeaderText {
+  z-index: 5;
+  position: absolute;
+  bottom: 16%;
+  width: 40%;
+  margin: 0 30%;
+  color: $color-RoadmapTitleHeaderText;
+}

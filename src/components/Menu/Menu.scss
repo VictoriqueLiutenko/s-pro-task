@@ -1,0 +1,43 @@
+@import "../../assets/constants/fonts.scss";
+
+$color-MenuItem: rgb(46, 56, 71);
+
+.Menu {
+  > ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    > li {
+      list-style: none;
+      padding: 0 15px;
+      > a {
+        text-decoration: none;
+        font-family: $fontFamily_cabin;
+        text-transform: uppercase;
+        color: $color-MenuItem;
+        font-size: $font-size-small;
+        position: relative;
+        &:after {
+          content: "";
+          background: none repeat scroll 0 0 transparent;
+          bottom: -2px;
+          border-radius: 3px;
+          display: block;
+          height: 2px;
+          left: 50%;
+          position: absolute;
+          background: $color-MenuItem;
+          transition: width 0.3s ease 0s, left 0.3s ease 0s;
+          width: 0;
+        }
+        &:hover:after {
+          width: 100%;
+          left: 0;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 700px) {
+    text-align: center;
+  }
+}
