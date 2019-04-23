@@ -1,17 +1,10 @@
-.Citations {
+.citations {
   overflow-x: hidden;
   overflow-y: hidden;
   margin-top: 25px;
-  margin-bottom: -6%;
   display: flex;
-  @media screen and (min-width: 1500px) {
-    margin-bottom: 0%;
-  }
-  @media screen and (max-width: 700px) {
-    margin-bottom: 0%;
-  }
 }
-.Citations-Slider {
+.citations_slider {
   width: 91%;
   height: 314px;
   @media screen and (min-width: 1450px) {
@@ -22,7 +15,7 @@
     width: 100%;
   }
 }
-.Citations-SliderBg {
+.citations_sliderBg {
   background-image: url("../../assets/images/sliderBg.png");
   background-position: bottom right;
   background-size: cover;
@@ -33,7 +26,7 @@
     background-position: top left;
   }
 }
-.Citations-Parallelogram {
+.citations_parallelogram {
   position: relative;
   height: 390px;
   right: 9.1%;
@@ -47,7 +40,7 @@
     display: none;
   }
 }
-.Citations-Quotes {
+.citations_quotes {
   background-image: url("../../assets/images/quotes.png");
   background-position: center;
   background-size: contain;

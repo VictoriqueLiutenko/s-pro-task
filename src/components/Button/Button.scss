@@ -1,12 +1,12 @@
 @import "../../assets/constants/fonts.scss";
 
-$color-ButtonText: rgb(65, 50, 129);
-$color-ButtonBorder: rgb(65, 50, 129);
+$color-buttonText: rgb(65, 50, 129);
+$color-buttonBorder: rgb(65, 50, 129);
 
-.Button {
+.button {
   width: 155px;
   height: 50px;
-  border: 2px solid $color-ButtonBorder;
+  border: 2px solid $color-buttonBorder;
   border-radius: 5px;
   display: flex;
   align-items: center;
@@ -14,12 +14,12 @@ $color-ButtonBorder: rgb(65, 50, 129);
   background-color: transparent;
   text-transform: uppercase;
   text-decoration: none;
-  font-family: $fontFamily_cabin;
-  color: $color-ButtonText;
+  font-family: $font-family_cabin;
+  color: $color-buttonText;
   font-size: $font-size-smallest;
   letter-spacing: 0.5px;
 }
-.Button-Icon {
+.button_icon {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -27,7 +27,7 @@ $color-ButtonBorder: rgb(65, 50, 129);
   height: 18px;
   margin: 0 5px;
 }
-.ButtonText {
+.buttonText {
   &:after {
     content: "";
     background: none repeat scroll 0 0 transparent;

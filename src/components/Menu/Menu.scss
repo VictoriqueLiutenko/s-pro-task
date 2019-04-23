@@ -1,8 +1,8 @@
 @import "../../assets/constants/fonts.scss";
 
-$color-MenuItem: rgb(46, 56, 71);
+$color-menuItem: rgb(46, 56, 71);
 
-.Menu {
+.menu {
   > ul {
     margin: 0;
     padding: 0;
@@ -12,9 +12,9 @@ $color-MenuItem: rgb(46, 56, 71);
       padding: 0 15px;
       > a {
         text-decoration: none;
-        font-family: $fontFamily_cabin;
+        font-family: $font-family_cabin;
         text-transform: uppercase;
-        color: $color-MenuItem;
+        color: $color-menuItem;
         font-size: $font-size-small;
         position: relative;
         &:after {
@@ -26,7 +26,7 @@ $color-MenuItem: rgb(46, 56, 71);
           height: 2px;
           left: 50%;
           position: absolute;
-          background: $color-MenuItem;
+          background: $color-menuItem;
           transition: width 0.3s ease 0s, left 0.3s ease 0s;
           width: 0;
         }

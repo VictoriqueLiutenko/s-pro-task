@@ -1,26 +1,15 @@
 import React from "react";
 import "./Menu.scss";
+import { menuLinks } from "../../config/data_config";
 
-export function Menu(props) {
-  return (
-    <nav className="Menu">
-      <ul>
-        <li>
-          <a href="#">Item 1</a>
+export const Menu = () => (
+  <nav className="menu">
+    <ul>
+      {menuLinks.map((link, linkKey) => (
+        <li key={linkKey}>
+          <a href="#">{link}</a>
         </li>
-        <li>
-          <a href="#">Item 2</a>
-        </li>
-        <li>
-          <a href="#">Item 3</a>
-        </li>
-        <li>
-          <a href="#">Item 4</a>
-        </li>
-        <li>
-          <a href="#">Item 5</a>
-        </li>
-      </ul>
-    </nav>
-  );
-}
+      ))}
+    </ul>
+  </nav>
+);

@@ -1,11 +1,9 @@
 @import "../../assets/constants/fonts.scss";
 
-$color-BackgroundTitleFigureBackground: rgba(54, 158, 207, 0.7);
-$color-BackgroundFigureBackground: rgb(54, 158, 207);
-$color-BackgroundTitle: rgb(255, 255, 255);
-$color-BackgroundButtons: rgb(255, 255, 255);
+$color-backgroundFigureBackground: rgb(54, 158, 207);
+$color-backgroundTitle: rgb(255, 255, 255);
 
-.Background {
+.background {
   background-image: url("../../assets/images/bg.png");
   background-position: top right;
   background-repeat: no-repeat;
@@ -18,28 +16,28 @@ $color-BackgroundButtons: rgb(255, 255, 255);
   overflow-x: hidden;
   overflow-y: hidden;
 }
-.Background-TitleParallelogram {
-  margin: 0 auto 0 14%;
-  top: 36%;
-  position: relative;
-  @media screen and (max-width: 1120px) {
-    > .Parallelogram {
-      display: none;
-    }
-  }
-}
-.Background-Title {
+.background_title {
   z-index: 5;
   position: absolute;
   top: 36%;
   width: 60%;
   margin: 0 16%;
-  color: $color-BackgroundTitle;
+  color: $color-backgroundTitle;
   @media screen and (max-width: 1120px) {
     top: 16%;
   }
 }
-.Background-Buttons {
+.background_titleParallelogram {
+  margin: 0 auto 0 14%;
+  top: 36%;
+  position: relative;
+  @media screen and (max-width: 1120px) {
+    > .parallelogram {
+      display: none;
+    }
+  }
+}
+.background_buttons {
   display: flex;
   position: absolute;
   top: 51%;
@@ -54,14 +52,14 @@ $color-BackgroundButtons: rgb(255, 255, 255);
   @media screen and (max-width: 700px) {
     margin: 0 0 0 16%;
     top: 35%;
-    > .Button {
+    > .button {
       width: 100px !important;
       height: 30px;
       text-align: center;
     }
   }
 }
-.Background-Parallelogram {
+.background_parallelogram {
   top: 58%;
   position: relative;
   left: 61%;
@@ -79,8 +77,8 @@ $color-BackgroundButtons: rgb(255, 255, 255);
     height: 100px;
     width: 353px;
     border-radius: 5px;
-    background: $color-BackgroundFigureBackground;
-    > .Parallelogram {
+    background: $color-backgroundFigureBackground;
+    > .parallelogram {
       display: none;
     }
   }

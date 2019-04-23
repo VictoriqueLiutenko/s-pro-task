@@ -1,7 +1,7 @@
 @import "../../assets/constants/fonts.scss";
-$color-SliderColor: rgb(255, 255, 255);
+$color-sliderColor: rgb(255, 255, 255);
 
-.SliderCustomArrows-ArrowWrapper {
+.sliderCustomArrows_arrowWrapper {
   position: absolute;
   display: flex;
   width: 91%;
@@ -15,7 +15,7 @@ $color-SliderColor: rgb(255, 255, 255);
     height: 514px;
   }
 }
-.SliderCustomArrows-Arrow {
+.sliderCustomArrows_arrow {
   height: 48px;
   width: 122px;
   display: flex;
@@ -23,7 +23,7 @@ $color-SliderColor: rgb(255, 255, 255);
   justify-content: center;
   font-size: $font-size-largest;
   > span {
-    color: $color-SliderColor;
+    color: $color-sliderColor;
     cursor: pointer;
     z-index: 10;
   }
@@ -31,8 +31,8 @@ $color-SliderColor: rgb(255, 255, 255);
     cursor: pointer;
   }
 }
-.SliderCustomArrows-SlidesCount {
-  color: $color-SliderColor;
+.sliderCustomArrows_slidesCount {
+  color: $color-sliderColor;
   font-size: $font-size-small;
   margin-bottom: 15px;
   min-width: 50px;

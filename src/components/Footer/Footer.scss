@@ -1,19 +1,19 @@
 @import "../../assets/constants/fonts.scss";
 
 $color-FooterBackground: rgb(247, 248, 250);
-$color-FooterText: rgb(0, 2, 33);
-$color-FooterLine: rgb(221, 227, 235);
+$color-footerText: rgb(0, 2, 33);
+$color-footerLine: rgb(221, 227, 235);
 
-.Footer {
+.footer {
   margin-top: 66px;
-  border-top: 1px solid $color-FooterLine;
+  border-top: 1px solid $color-footerLine;
 }
-.Footer-Social {
+.footer_social {
   width: calc(91% - 100px); //100px - Logo widht
   display: flex;
   justify-content: center;
 }
-.Footer-WhiteBg {
+.footer_whiteBg {
   display: flex;
   align-items: center;
   padding: 2% 9%;
@@ -21,20 +21,20 @@ $color-FooterLine: rgb(221, 227, 235);
     padding: 2% 1%;
   }
 }
-.Footer-GrayBg {
+.footer_grayBg {
   background-color: $color-FooterBackground;
   padding: 3% 9%;
   display: flex;
   justify-content: space-between;
-  color: $color-FooterText;
-  font-family: $fontFamily_montserrat;
+  color: $color-footerText;
+  font-family: $font-family_montserrat;
   font-size: $font-size-smallest;
   letter-spacing: -0.5px;
   @media screen and (max-width: 700px) {
     padding: 2% 1%;
   }
 }
-.Footer-ConditionsLinks {
+.footer_conditionsLinks {
   margin: 0;
   padding: 0;
   display: flex;
@@ -43,7 +43,7 @@ $color-FooterLine: rgb(221, 227, 235);
     padding-right: 20px;
     > a {
       text-decoration: none;
-      color: $color-FooterText;
+      color: $color-footerText;
     }
   }
 }

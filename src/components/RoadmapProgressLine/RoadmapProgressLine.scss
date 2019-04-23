@@ -1,38 +1,38 @@
 @import "../../assets/constants/variables.scss";
 
-$color-MainBackground: rgb(255, 255, 255);
-$color-RoadmapLine: rgb(222, 227, 235);
-$color-RoadmapLine_finished: rgba(54, 158, 207, 0.4);
-$color-RoadmapLine_current: rgb(54, 158, 207);
-$color-RoadmapCircle: rgb(222, 227, 235);
-$color-RoadmapCircle_current: rgb(54, 158, 207);
-$color-RoadmapCircle_finished: rgb(54, 158, 207);
-$color-RoadmapCircle_finishedCheckMark: rgb(255, 255, 255);
+$color-mainBackground: rgb(255, 255, 255);
+$color-roadmapLine: rgb(222, 227, 235);
+$color-roadmapLine--finished: rgba(54, 158, 207, 0.4);
+$color-roadmapLine--current: rgb(54, 158, 207);
+$color-roadmapCircle: rgb(222, 227, 235);
+$color-roadmapCircle--current: rgb(54, 158, 207);
+$color-roadmapCircle--finished: rgb(54, 158, 207);
+$color-roadmapCircle--finishedCheckMark: rgb(255, 255, 255);
 
-.RoadmapProgressLine {
+.roadmapProgressLine {
   display: block;
-  background-color: $color-MainBackground;
+  background-color: $color-mainBackground;
   z-index: 3;
 }
-.RoadmapProgressLine-Line {
-  border-left: 2px dashed $color-RoadmapLine;
+.roadmapProgressLine_line {
+  border-left: 2px dashed $color-roadmapLine;
   height: calc(100% - #{$RoadmapCircleOuterSize});
   margin: 0 $RoadmapCircleOuterSize / 2 - 1;
 }
-.RoadmapProgressLine-Circle {
+.roadmapProgressLine_circle {
   width: $RoadmapCircleDiameter;
   height: $RoadmapCircleDiameter;
   margin: ($RoadmapCircleOuterSize - $RoadmapCircleDiameter) / 2;
-  background: $color-RoadmapCircle;
+  background: $color-roadmapCircle;
   border-radius: 50%;
 }
-.RoadmapProgressLine_finished {
-  @extend .RoadmapProgressLine;
-  .RoadmapProgressLine-Line {
-    border-left: 2px solid $color-RoadmapLine_finished;
+.roadmapProgressLine--finished {
+  @extend .roadmapProgressLine;
+  .roadmapProgressLine_line {
+    border-left: 2px solid $color-roadmapLine--finished;
   }
-  .RoadmapProgressLine-Circle {
-    background: $color-RoadmapCircle_finished;
+  .roadmapProgressLine_circle {
+    background: $color-roadmapCircle--finished;
     width: $RoadmapCircleDiameter * 1.5;
     height: $RoadmapCircleDiameter * 1.5;
     margin: (($RoadmapCircleOuterSize - $RoadmapCircleDiameter) / 2) -
@@ -42,7 +42,7 @@ $color-RoadmapCircle_finishedCheckMark: rgb(255, 255, 255);
     &:before {
       content: "✓";
       position: relative;
-      color: $color-RoadmapCircle_finishedCheckMark;
+      color: $color-roadmapCircle--finishedCheckMark;
       width: 100%;
       height: 100%;
       display: flex;
@@ -52,20 +52,20 @@ $color-RoadmapCircle_finishedCheckMark: rgb(255, 255, 255);
     }
   }
 }
-.RoadmapProgressLine_current {
-  @extend .RoadmapProgressLine;
-  .RoadmapProgressLine-Line {
-    border-left: 2px solid $color-RoadmapLine_current;
+.roadmapProgressLine_current {
+  @extend .roadmapProgressLine;
+  .roadmapProgressLine_line {
+    border-left: 2px solid $color-roadmapLine--current;
   }
-  .RoadmapProgressLine-Circle {
-    background: $color-RoadmapCircle_current;
+  .roadmapProgressLine_circle {
+    background: $color-roadmapCircle--current;
     &:before {
       content: "";
       display: block;
       position: relative;
       width: $RoadmapCircleDiameter * 1.5;
       height: $RoadmapCircleDiameter * 1.5;
-      border: 2px solid $color-RoadmapCircle_current;
+      border: 2px solid $color-roadmapCircle--current;
       bottom: $RoadmapCircleDiameter / 2 - 2; //Half the diameter of the
       right: $RoadmapCircleDiameter / 2 - 2; //inner circle minus the width of the frame
       border-radius: 50%;

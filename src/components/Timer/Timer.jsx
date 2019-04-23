@@ -40,35 +40,35 @@ export class Timer extends React.Component {
     };
 
     return (
-      <div className="Timer">
+      <div className="timer">
         <Title text="Title block" fontSize="2vw" />
         <time
-          className="TimerDisplay"
+          className="timerDisplay"
           dateTime={`P${deltaDetailed.asDays}DT${deltaDetailed.hours}H${
             deltaDetailed.minutes
           }M${deltaDetailed.seconds}S`}
         >
-          <div className="TimerDisplay-Days">
-            <span className="TimerDisplay-Name">days</span>
-            <span className="TimerDisplay-Number">
+          <div className="timerDisplay_days">
+            <span className="timerDisplay_name">days</span>
+            <span className="timerDisplay_number">
               {String(deltaDetailed.days).padStart(2, 0)}
             </span>
           </div>
-          <div className="TimerDisplay-Hours">
-            <span className="TimerDisplay-Name">hours</span>
-            <span className="TimerDisplay-Number">
+          <div className="timerDisplay_hours">
+            <span className="timerDisplay_name">hours</span>
+            <span className="timerDisplay_number">
               {String(deltaDetailed.hours).padStart(2, 0)}
             </span>
           </div>
-          <div className="TimerDisplay-Minutes">
-            <span className="TimerDisplay-Name">minutes</span>
-            <span className="TimerDisplay-Number">
+          <div className="timerDisplay_minutes">
+            <span className="timerDisplay_name">minutes</span>
+            <span className="timerDisplay_number">
               {String(deltaDetailed.minutes).padStart(2, 0)}
             </span>
           </div>
-          <div className="TimerDisplay-Seconds">
-            <span className="TimerDisplay-Name">seconds</span>
-            <span className="TimerDisplay-Number">
+          <div className="timerDisplay_seconds">
+            <span className="timerDisplay_name">seconds</span>
+            <span className="timerDisplay_number">
               {String(deltaDetailed.seconds).padStart(2, 0)}
             </span>
           </div>

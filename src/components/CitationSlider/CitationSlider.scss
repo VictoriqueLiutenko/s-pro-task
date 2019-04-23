@@ -1,28 +1,28 @@
 @import "../../assets/constants/fonts.scss";
-$color-SliderColor: rgb(255, 255, 255);
+$color-sliderColor: rgb(255, 255, 255);
 
-.CitationSlider {
-  color: $color-SliderColor;
+.citationSlider {
+  color: $color-sliderColor;
   height: 100%;
   width: 91%;
   @media screen and (max-width: 1120px) {
     width: 100%;
   }
 }
-.CitationSlider-Slide {
+.citationSlider_slide {
   height: 100%;
   width: 50% !important;
   display: block !important;
   margin: auto;
   outline: none;
-  font-family: $fontFamily_montserrat;
+  font-family: $font-family_montserrat;
   padding: 6% 0 0 10%;
   @media screen and (max-width: 1120px) {
     width: 60% !important;
     margin: unset;
   }
 }
-.CitationSlider-Citation {
+.citationSlider_citation {
   font-size: $font-size-large;
   line-height: 24px;
   padding: 0 30px;
@@ -35,12 +35,12 @@ $color-SliderColor: rgb(255, 255, 255);
     padding: 0;
   }
 }
-.CitationSlider-PersonInfoWrapper {
+.citationSlider_personInfoWrapper {
   display: flex;
   align-items: center;
   margin-top: 6%;
 }
-.CitationSlider-Logo {
+.citationSlider_logo {
   background-image: url("../../assets/images/logo-roundBg.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -49,13 +49,13 @@ $color-SliderColor: rgb(255, 255, 255);
   height: 70px;
   margin-right: 25px;
 }
-.CitationSlider-Name,
-.CitationSlider-Position,
-.CitationSlider-Company {
+.citationSlider_name,
+.citationSlider_position,
+.citationSlider_company {
   font-size: $font-size-smallest;
   line-height: 19px;
 }
-.CitationSlider-Position,
-.CitationSlider-Company {
+.citationSlider_position,
+.citationSlider_company {
   opacity: 0.7;
 }

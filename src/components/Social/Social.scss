@@ -1,4 +1,4 @@
-.Social {
+.social {
   margin: 0;
   padding: 0;
   display: flex;
@@ -8,14 +8,14 @@
   }
 }
 
-.Social_github,
-.Social_bitcoin,
-.Social_reddit,
-.Social_medium,
-.Social_facebook,
-.Social_linkedin,
-.Social_twitter,
-.Social_telegram {
+.social--github,
+.social--bitcoin,
+.social--reddit,
+.social--medium,
+.social--facebook,
+.social--linkedin,
+.social--twitter,
+.social--telegram {
   background-image: url("../../assets/images/social.png");
   background-repeat: no-repeat;
   display: block;
@@ -23,27 +23,27 @@
   height: 20px;
 }
 
-.Social_github {
+.social--github {
   background-position: 100%;
 }
-.Social_bitcoin {
+.social--bitcoin {
   background-position: 86%;
 }
-.Social_reddit {
+.social--reddit {
   background-position: 72%;
 }
-.Social_medium {
+.social--medium {
   background-position: 57%;
 }
-.Social_facebook {
+.social--facebook {
   background-position: 43%;
 }
-.Social_linkedin {
+.social--linkedin {
   background-position: 28%;
 }
-.Social_twitter {
+.social--twitter {
   background-position: 14%;
 }
-.Social_telegram {
+.social--telegram {
   background-position: 0%;
 }

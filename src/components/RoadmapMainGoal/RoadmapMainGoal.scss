@@ -1,16 +1,16 @@
 @import "../../assets/constants/fonts.scss";
 
-$color-RoadmapMainGoalListItem: rgb(0, 2, 33);
-$color-RoadmapMainGoalTitle: rgb(0, 2, 33);
-$color-RoadmapMainGoalImageBorder: rgb(54, 158, 207);
+$color-roadmapMainGoalListItem: rgb(0, 2, 33);
+$color-roadmapMainGoalTitle: rgb(0, 2, 33);
+$color-roadmapMainGoalImageBorder: rgb(54, 158, 207);
 
-.RoadmapMainGoal {
+.roadmapMainGoal {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 15px;
 }
-.RoadmapMainGoal-Image {
+.roadmapMainGoal_image {
   background-image: url("../../assets/images/logoRound.svg");
   background-position: 66% 75%;
   background-size: 30px;
@@ -23,21 +23,21 @@ $color-RoadmapMainGoalImageBorder: rgb(54, 158, 207);
     position: relative;
     width: 40px;
     height: 40px;
-    border: 2px solid $color-RoadmapMainGoalImageBorder;
+    border: 2px solid $color-roadmapMainGoalImageBorder;
     border-radius: 50%;
   }
 }
-.RoadmapMainGoal-Year {
-  color: $color-RoadmapMainGoalTitle;
-  font-family: $fontFamily_cabin;
+.roadmapMainGoal_year {
+  color: $color-roadmapMainGoalTitle;
+  font-family: $font-family_cabin;
   font-size: $font-size-largest;
   margin-bottom: 9px;
 }
-.RoadmapMainGoal-List {
+.roadmapMainGoal_list {
   margin: 0;
   padding-left: 22px;
-  color: $color-RoadmapMainGoalListItem;
-  font-family: $fontFamily_montserrat;
+  color: $color-roadmapMainGoalListItem;
+  font-family: $font-family_montserrat;
   font-size: $font-size-small;
   letter-spacing: -0.5px;
   > li {

@@ -4,16 +4,16 @@ import "./RoadmapProgressLine.scss";
 export function RoadmapProgressLine(props) {
   let ClassName = "";
   if (props.goal.status === "finished") {
-    ClassName = "RoadmapProgressLine_finished";
+    ClassName = "roadmapProgressLine--finished";
   } else if (props.goal.status === "current") {
-    ClassName = "RoadmapProgressLine_current";
+    ClassName = "roadmapProgressLine--current";
   } else {
-    ClassName = "RoadmapProgressLine";
+    ClassName = "roadmapProgressLine";
   }
   return (
     <div className={ClassName}>
-      <div className="RoadmapProgressLine-Circle" />
-      <div className="RoadmapProgressLine-Line" />
+      <div className="roadmapProgressLine_circle" />
+      <div className="roadmapProgressLine_line" />
     </div>
   );
 }

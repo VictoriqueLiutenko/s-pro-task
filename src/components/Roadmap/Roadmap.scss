@@ -1,8 +1,8 @@
 @import "../../assets/constants/variables.scss";
 
-$color-Roadmap_line: rgb(222, 227, 235);
+$color-roadmapLine: rgb(222, 227, 235);
 
-.Roadmap-TreeWrapper {
+.roadmap_treeWrapper {
   display: flex;
   flex-wrap: wrap;
   width: 72%;
@@ -12,28 +12,28 @@ $color-Roadmap_line: rgb(222, 227, 235);
     margin-left: calc(((100% - 95%) / 2) + (#{$RoadmapCircleOuterSize}) / 2);
   }
 }
-.Roadmap-ItemWrapper {
+.roadmap_itemWrapper {
   display: flex;
   width: 50%;
   justify-content: space-between;
-  > .Roadmap-ConnectingLine {
+  > .roadmap_connectingLine {
     height: 2px;
     margin: $RoadmapCircleCenter - 1;
-    background-color: $color-Roadmap_line;
+    background-color: $color-roadmapLine;
   }
 }
-.Roadmap-ItemWrapper_even {
+.roadmap_itemWrapper--even {
   margin-right: calc(50% - #{$RoadmapCircleOuterSize});
-  > .Roadmap-ConnectingLine {
+  > .roadmap_connectingLine {
     width: 29%;
     position: absolute;
     margin-right: auto;
     margin-left: 77px;
   }
 }
-.Roadmap-ItemWrapper_odd {
+.roadmap_itemWrapper--odd {
   margin-left: calc(50% - #{$RoadmapCircleOuterSize});
-  > .Roadmap-ConnectingLine {
+  > .roadmap_connectingLine {
     width: 68px;
     margin-left: 0;
   }

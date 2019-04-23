@@ -3,23 +3,21 @@ import "./Citations.scss";
 import CitationSlider from "../CitationSlider/CitationSlider";
 import { Parallelogram } from "../Parallelogram/Parallelogram";
 
-export function Citations(props) {
-  return (
-    <section className="Citations">
-      <div className="Citations-Slider">
-        <div className="Citations-SliderBg">
-          <div className="Citations-Quotes" />
-          <CitationSlider />
-        </div>
+export const Citations = () => (
+  <section className="citations">
+    <div className="citations_slider">
+      <div className="citations_sliderBg">
+        <div className="citations_quotes" />
+        <CitationSlider />
       </div>
-      <div className="Citations-Parallelogram">
-        <Parallelogram
-          height="390px"
-          width="1000px"
-          background="rgb(242, 243, 245)"
-          transform="skew(45deg)"
-        />
-      </div>
-    </section>
-  );
-}
+    </div>
+    <div className="citations_parallelogram">
+      <Parallelogram
+        height="390px"
+        width="1000px"
+        background="rgb(242, 243, 245)"
+        transform="skew(45deg)"
+      />
+    </div>
+  </section>
+);

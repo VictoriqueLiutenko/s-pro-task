@@ -2,11 +2,11 @@
 
 $color-timerDisplay: rgb(255, 255, 255);
 
-.Timer {
+.timer {
   position: relative;
   z-index: 5;
   color: $color-timerDisplay;
-  font-family: $fontFamily_cabin;
+  font-family: $font-family_cabin;
   text-transform: uppercase;
   padding: 7% 0 0 12%;
   display: flex;
@@ -25,7 +25,7 @@ $color-timerDisplay: rgb(255, 255, 255);
     padding: 5%;
   }
 }
-.TimerDisplay {
+.timerDisplay {
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -36,9 +36,9 @@ $color-timerDisplay: rgb(255, 255, 255);
     align-items: center;
   }
 }
-.TimerDisplay-Name {
+.timerDisplay_name {
   font-size: $font-size-smallest;
 }
-.TimerDisplay-Number {
+.timerDisplay_number {
   font-size: $font-size-adaptive-large;
 }

@@ -1,33 +1,13 @@
 import React from "react";
 import "./Social.scss";
+import { socialMediaNames } from "../../config/data_config";
 
-export function Social(props) {
-  return (
-    <ul className="Social">
-      <li>
-        <a className="Social_telegram" href="#" />
+export const Social = () => (
+  <ul className="social">
+    {socialMediaNames.map((social, socialKey) => (
+      <li key={socialKey}>
+        <a className={social} href="#" />
       </li>
-      <li>
-        <a className="Social_twitter" href="#" />
-      </li>
-      <li>
-        <a className="Social_linkedin" href="#" />
-      </li>
-      <li>
-        <a className="Social_facebook" href="#" />
-      </li>
-      <li>
-        <a className="Social_medium" href="#" />
-      </li>
-      <li>
-        <a className="Social_reddit" href="#" />
-      </li>
-      <li>
-        <a className="Social_bitcoin" href="#" />
-      </li>
-      <li>
-        <a className="Social_github" href="#" />
-      </li>
-    </ul>
-  );
-}
+    ))}
+  </ul>
+);

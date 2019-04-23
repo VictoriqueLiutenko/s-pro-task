@@ -1,6 +1,4 @@
 import React from "react";
 import "./Logo.scss";
 
-export function Logo(props) {
-  return <div className="Logo" />;
-}
+export const Logo = () => <div className="logo" />;
