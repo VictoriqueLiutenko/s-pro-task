@@ -1,5 +1,5 @@
 {
-  "main.css": "/s-pro-task/static/css/main.b6d9ac73.chunk.css",
+  "main.css": "/s-pro-task/static/css/main.cf4595b6.chunk.css",
   "main.js": "/s-pro-task/static/js/main.13ee914d.chunk.js",
   "main.js.map": "/s-pro-task/static/js/main.13ee914d.chunk.js.map",
   "runtime~main.js": "/s-pro-task/static/js/runtime~main.8da93a6f.js",
@@ -7,9 +7,9 @@
   "static/js/2.a771dc7c.chunk.js": "/s-pro-task/static/js/2.a771dc7c.chunk.js",
   "static/js/2.a771dc7c.chunk.js.map": "/s-pro-task/static/js/2.a771dc7c.chunk.js.map",
   "index.html": "/s-pro-task/index.html",
-  "precache-manifest.c31c673991ce9f7dbf586a78ceeecd20.js": "/s-pro-task/precache-manifest.c31c673991ce9f7dbf586a78ceeecd20.js",
+  "precache-manifest.0a701861469d03a9047ed09d87e48790.js": "/s-pro-task/precache-manifest.0a701861469d03a9047ed09d87e48790.js",
   "service-worker.js": "/s-pro-task/service-worker.js",
-  "static/css/main.b6d9ac73.chunk.css.map": "/s-pro-task/static/css/main.b6d9ac73.chunk.css.map",
+  "static/css/main.cf4595b6.chunk.css.map": "/s-pro-task/static/css/main.cf4595b6.chunk.css.map",
   "static/media/Background.scss": "/s-pro-task/static/media/bg.a12b08f5.png",
   "static/media/cloudIcon-violet.svg": "/s-pro-task/static/media/cloudIcon-violet.10580536.svg",
   "static/media/cloudIcon-white.svg": "/s-pro-task/static/media/cloudIcon-white.072ad840.svg",
