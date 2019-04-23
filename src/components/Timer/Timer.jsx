@@ -43,32 +43,32 @@ export class Timer extends React.Component {
       <div className="timer">
         <Title text="Title block" fontSize="2vw" />
         <time
-          className="timerDisplay"
+          className="timer_display"
           dateTime={`P${deltaDetailed.asDays}DT${deltaDetailed.hours}H${
             deltaDetailed.minutes
           }M${deltaDetailed.seconds}S`}
         >
-          <div className="timerDisplay_days">
-            <span className="timerDisplay_name">days</span>
-            <span className="timerDisplay_number">
+          <div className="timer_displayDays">
+            <span className="timer_displayName">days</span>
+            <span className="timer_displayNumber">
               {String(deltaDetailed.days).padStart(2, 0)}
             </span>
           </div>
-          <div className="timerDisplay_hours">
-            <span className="timerDisplay_name">hours</span>
-            <span className="timerDisplay_number">
+          <div className="timer_displayHours">
+            <span className="timer_displayName">hours</span>
+            <span className="timer_displayNumber">
               {String(deltaDetailed.hours).padStart(2, 0)}
             </span>
           </div>
-          <div className="timerDisplay_minutes">
-            <span className="timerDisplay_name">minutes</span>
-            <span className="timerDisplay_number">
+          <div className="timer_displayMinutes">
+            <span className="timer_displayName">minutes</span>
+            <span className="timer_displayNumber">
               {String(deltaDetailed.minutes).padStart(2, 0)}
             </span>
           </div>
-          <div className="timerDisplay_seconds">
-            <span className="timerDisplay_name">seconds</span>
-            <span className="timerDisplay_number">
+          <div className="timer_displaySeconds">
+            <span className="timer_displayName">seconds</span>
+            <span className="timer_displayNumber">
               {String(deltaDetailed.seconds).padStart(2, 0)}
             </span>
           </div>

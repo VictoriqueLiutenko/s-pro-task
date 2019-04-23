@@ -12,7 +12,7 @@ $color-goalTitle--finished: rgba(0, 2, 33, 0.4);
 }
 .goal_title {
   color: $color-goalTitle;
-  font-family: $font-family_cabin;
+  font-family: $font-family-cabin;
   font-size: $font-size-larger;
   margin-top: ($RoadmapCircleOuterSize - $RoadmapCircleDiameter) / 2 - 2;
   margin-bottom: 5px;
@@ -23,7 +23,7 @@ $color-goalTitle--finished: rgba(0, 2, 33, 0.4);
 }
 .goal_listItem {
   color: $color-goalListItem;
-  font-family: $font-family_montserrat;
+  font-family: $font-family-montserrat;
   font-size: $font-size-small;
   padding: 2px 0;
   letter-spacing: -0.5px;

@@ -29,7 +29,7 @@ $color-roadmapMainGoalImageBorder: rgb(54, 158, 207);
 }
 .roadmapMainGoal_year {
   color: $color-roadmapMainGoalTitle;
-  font-family: $font-family_cabin;
+  font-family: $font-family-cabin;
   font-size: $font-size-largest;
   margin-bottom: 9px;
 }
@@ -37,7 +37,7 @@ $color-roadmapMainGoalImageBorder: rgb(54, 158, 207);
   margin: 0;
   padding-left: 22px;
   color: $color-roadmapMainGoalListItem;
-  font-family: $font-family_montserrat;
+  font-family: $font-family-montserrat;
   font-size: $font-size-small;
   letter-spacing: -0.5px;
   > li {

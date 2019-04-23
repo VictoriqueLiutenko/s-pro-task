@@ -6,7 +6,7 @@ $color-timerDisplay: rgb(255, 255, 255);
   position: relative;
   z-index: 5;
   color: $color-timerDisplay;
-  font-family: $font-family_cabin;
+  font-family: $font-family-cabin;
   text-transform: uppercase;
   padding: 7% 0 0 12%;
   display: flex;
@@ -34,7 +34,7 @@ $color-timerDisplay: rgb(255, 255, 255);
     }
   }
 }
-.timerDisplay {
+.timer_display {
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -50,9 +50,9 @@ $color-timerDisplay: rgb(255, 255, 255);
     margin: auto;
   }
 }
-.timerDisplay_name {
+.timer_displayName {
   font-size: $font-size-smallest;
 }
-.timerDisplay_number {
+.timer_displayNumber {
   font-size: $font-size-adaptive-large;
 }

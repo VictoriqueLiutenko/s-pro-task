@@ -14,7 +14,7 @@ $color-buttonBorder: rgb(65, 50, 129);
   background-color: transparent;
   text-transform: uppercase;
   text-decoration: none;
-  font-family: $font-family_cabin;
+  font-family: $font-family-cabin;
   color: $color-buttonText;
   font-size: $font-size-smallest;
   letter-spacing: 0.5px;
@@ -27,7 +27,7 @@ $color-buttonBorder: rgb(65, 50, 129);
   height: 18px;
   margin: 0 5px;
 }
-.buttonText {
+.button_text {
   &:after {
     content: "";
     background: none repeat scroll 0 0 transparent;

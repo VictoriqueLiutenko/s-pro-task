@@ -3,7 +3,7 @@ import "./SliderCustomArrows.scss";
 import { Parallelogram } from "../Parallelogram/Parallelogram";
 
 export function SliderCustomArrows(props) {
-  const { onClickPrev, onClickNext } = props;
+  const { onClickPrev, onClickNext, slideIndex, slidesCount } = props;
   return (
     <div className="sliderCustomArrows_arrowWrapper">
       <div
@@ -19,7 +19,7 @@ export function SliderCustomArrows(props) {
         <span>←</span>
       </div>
       <div className="sliderCustomArrows_slidesCount">
-        {props.slideIndex + 1} <span>OF {props.slidesCount}</span>
+        {slideIndex + 1} <span>OF {slidesCount}</span>
       </div>
       <div
         className="sliderCustomArrows_arrow sliderCustomArrows_arrowNext"

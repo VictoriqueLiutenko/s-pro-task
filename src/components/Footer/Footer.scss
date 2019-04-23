@@ -27,7 +27,7 @@ $color-footerLine: rgb(221, 227, 235);
   display: flex;
   justify-content: space-between;
   color: $color-footerText;
-  font-family: $font-family_montserrat;
+  font-family: $font-family-montserrat;
   font-size: $font-size-smallest;
   letter-spacing: -0.5px;
   @media screen and (max-width: 700px) {

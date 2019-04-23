@@ -21,6 +21,6 @@ export const Button = props => (
     ) : (
       <span />
     )}
-    <span className="buttonText">{props.text}</span>
+    <span className="button_text">{props.text}</span>
   </a>
 );
