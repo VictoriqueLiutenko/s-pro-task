@@ -56,7 +56,7 @@ export function Background(props) {
           width="700px"
           background="rgb(54, 158, 207)"
         />
-        <Timer toDate={new Date("2019-05-10 12:00:00")} />
+        <Timer toDate={new Date("2019/05/10 12:00:00")} />
       </div>
     </section>
   );
